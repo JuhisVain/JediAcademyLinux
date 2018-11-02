@@ -51,7 +51,7 @@ void RT_FireDecide( void )
 	qboolean enemyLOS = qfalse;
 	qboolean enemyCS = qfalse;
 	qboolean enemyInFOV = qfalse;
-	//qboolean move = qtrue;
+	//qboolean moveBoolBool = qtrue;
 	qboolean faceEnemy = qfalse;
 	qboolean shoot = qfalse;
 	qboolean hitAlly = qfalse;

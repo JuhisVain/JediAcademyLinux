@@ -721,7 +721,7 @@ void NPC_BSDefault( void )
 //	vec3_t		muzzle;
 //	qboolean	enemyLOS = qfalse;
 //	qboolean	enemyCS = qfalse;
-	qboolean	move = qtrue;
+	qboolean	moveBool = qtrue;
 //	qboolean	shoot = qfalse;
 
 	
@@ -824,13 +824,13 @@ void NPC_BSDefault( void )
 			shoot = qtrue;
 			if ( NPCInfo->goalEntity == NPC->enemy )
 			{//my goal is my enemy and I have a clear shot, no need to chase right now
-				move = qfalse;
+				moveBool = qfalse;
 			}
 		}
 		else
 		{//don't shoot yet, keep chasing
 			shoot = qfalse;
-			move = qtrue;
+			moveBool = qtrue;
 		}
 
 		//shoot decision
@@ -939,11 +939,11 @@ void NPC_BSDefault( void )
 			{//being forced to walk
 				if ( g_crosshairEntNum != NPC->s.number )
 				{//don't walk if player isn't aiming at me
-					move = qfalse;
+					moveBool = qfalse;
 				}
 			}
 
-			if ( move )
+			if ( moveBool )
 			{
 				//move toward goal
 				NPC_MoveToGoal( qtrue );
