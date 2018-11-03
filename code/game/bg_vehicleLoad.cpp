@@ -529,10 +529,16 @@ vehField_t vehicleFields[] =
 	{"soundLand",		VFOFS(soundLand),		VF_SOUND},//sound to play when ship lands
 	{"soundFlyBy",		VFOFS(soundFlyBy),		VF_SOUND_CLIENT},//sound to play when they buzz you
 	{"soundFlyBy2",		VFOFS(soundFlyBy2),		VF_SOUND_CLIENT},//alternate sound to play when they buzz you
+
+	{"soundShift",		VFOFS(soundShift1),		VF_SOUND},
+	
 	{"soundShift1",		VFOFS(soundShift1),		VF_SOUND},//sound to play when changing speeds
 	{"soundShift2",		VFOFS(soundShift2),		VF_SOUND},//sound to play when changing speeds
 	{"soundShift3",		VFOFS(soundShift3),		VF_SOUND},//sound to play when changing speeds
 	{"soundShift4",		VFOFS(soundShift4),		VF_SOUND},//sound to play when changing speeds
+
+	{"lExhaustTag", VFOFS(iExhaustFX), VF_EFFECT_CLIENT},
+	{"rExhaustTag", VFOFS(iExhaustFX), VF_EFFECT_CLIENT},
 
 	{"exhaustFX", VFOFS(iExhaustFX), VF_EFFECT_CLIENT},		//exhaust effect, played from "*exhaust" bolt(s)
 	{"turboFX", VFOFS(iTurboFX), VF_EFFECT_CLIENT},		//turbo exhaust effect, played from "*exhaust" bolt(s) when ship is in "turbo" mode

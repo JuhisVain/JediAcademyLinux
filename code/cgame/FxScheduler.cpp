@@ -432,7 +432,12 @@ int CFxScheduler::RegisterEffect( const char *file, bool bHasCorrectPath /*= fal
 		sprintf( temp, "%s/%s.efx", FX_FILE_PATH, sfile );
 		pfile = temp;
 	}
-
+	
+	if (!strcmp(pfile, "effects/*lexhaust.efx") || //Swoop bikes are looking for nonexisting effects
+	    !strcmp(pfile, "effects/*rexhaust.efx")) {
+	  pfile = "effects/ships/swoop_dust.efx"; //Dunno what this does, but it works.
+	}
+	
 	len = theFxHelper.OpenFile( pfile, &fh, FS_READ );
 
 	if ( len < 0 )

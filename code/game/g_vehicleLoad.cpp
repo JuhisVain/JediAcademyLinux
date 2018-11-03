@@ -77,9 +77,15 @@ vehField_t vehFields[VEH_PARM_MAX] =
 	{"gunswivelBone", VFOFS(gunswivelBone), VF_LSTRING},//gun swivel bones
 	{"lFinBone", VFOFS(lFinBone), VF_LSTRING},			//left fin bone
 	{"rFinBone", VFOFS(rFinBone), VF_LSTRING},			//right fin bone
+
+	/*	
 	{"lExhaustTag", VFOFS(lExhaustTag), VF_LSTRING},	//left exhaust tag
 	{"rExhaustTag", VFOFS(rExhaustTag), VF_LSTRING},	//right exhaust tag
+	*/
+	{"lExhaustTag", VFOFS(exhaustFX), VF_LSTRING},	//left exhaust tag
+	{"rExhaustTag", VFOFS(exhaustFX), VF_LSTRING},	//right exhaust tag
 
+	
 	{"soundOn", VFOFS(soundOn), VF_LSTRING},		//sound to play when get on it
 	{"soundLoop", VFOFS(soundLoop), VF_LSTRING},		//sound to loop while riding it
 	{"soundOff", VFOFS(soundOff), VF_LSTRING},		//sound to play when get off

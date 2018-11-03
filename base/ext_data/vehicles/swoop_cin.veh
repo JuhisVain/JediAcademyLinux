@@ -35,8 +35,8 @@ radarIcon		"gfx/menus/radar/swoop"
 
 soundOn 		"sound/vehicles/swoop/on.mp3"
 soundLoop 		"sound/vehicles/swoop/loop.wav"
-lExhaustTag		"*lexhaust"
-rExhaustTag		"*rexhaust"
+lExhaustTag		"ships/burner"
+rExhaustTag		"ships/burner"
 exhaustFX		"ships/burner"
 impactFX		"ships/scrape_sparks"
 flammable		1

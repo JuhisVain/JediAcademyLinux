@@ -211,10 +211,16 @@ typedef struct
 	int			soundOff;		//sound to play when get off
 	int			soundFlyBy;		//sound to play when they buzz you
 	int			soundFlyBy2;	//alternate sound to play when they buzz you
+
+  int soundShift;
+  
 	int			soundShift1;	//sound to play when accelerating
 	int			soundShift2;	//sound to play when accelerating
 	int			soundShift3;	//sound to play when decelerating
 	int			soundShift4;	//sound to play when decelerating
+
+  int lExhaustTag;
+  int rExhaustTag;
 
 	int			iExhaustFX;		//exhaust effect, played from "*exhaust" bolt(s)
 	int			iTurboFX;		//turbo exhaust effect, played from "*exhaust" bolt(s) when ship is in "turbo" mode
